@@ -1,4 +1,10 @@
-import type { Product } from "../types";
+import type {Product} from "../types";
+import headphones from "../assets/headphones.jpg"
+import smart_watch from "../assets/smart_watch.png"
+import backpack from "../assets/backpack.png"
+import wallet from "../assets/wallet.png"
+import mug from "../assets/mug.png"
+import lamp from "../assets/lamp.png"
 
 export function getProducts(): Product[] {
     return [
@@ -10,7 +16,7 @@ export function getProducts(): Product[] {
             description: "Smartwatch with health monitoring and notifications",
             inStock: true,
             rating: 4.7,
-            imageUrl: "/Users/mibrgmv/GolandProjects/zovoz/src/assets/Screenshot 2025-04-22 at 1.28.23PM.png",
+            imageUrl: smart_watch,
         },
         {
             id: 2,
@@ -20,7 +26,7 @@ export function getProducts(): Product[] {
             description: "Headphones with active noise cancellation and high-quality sound",
             inStock: true,
             rating: 4.5,
-            imageUrl: "/api/placeholder/300/300",
+            imageUrl: headphones,
         },
         {
             id: 3,
@@ -30,7 +36,7 @@ export function getProducts(): Product[] {
             description: "Waterproof city backpack with a laptop compartment",
             inStock: false,
             rating: 4.8,
-            imageUrl: "/api/placeholder/300/300",
+            imageUrl: backpack,
         },
         {
             id: 4,
@@ -40,7 +46,7 @@ export function getProducts(): Product[] {
             description: "Compact handmade leather wallet",
             inStock: true,
             rating: 4.6,
-            imageUrl: "/api/placeholder/300/300",
+            imageUrl: wallet,
         },
         {
             id: 5,
@@ -50,7 +56,7 @@ export function getProducts(): Product[] {
             description: "Minimalist ceramic mug with thermal insulation",
             inStock: true,
             rating: 4.3,
-            imageUrl: "/api/placeholder/300/300",
+            imageUrl: mug,
         },
         {
             id: 6,
@@ -60,7 +66,7 @@ export function getProducts(): Product[] {
             description: "Adjustable table lamp with variable light temperature",
             inStock: true,
             rating: 4.4,
-            imageUrl: "/api/placeholder/300/300",
+            imageUrl: lamp,
         },
     ];
 }
